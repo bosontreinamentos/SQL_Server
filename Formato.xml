@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BCPFORMAT xmlns="http://schemas.microsoft.com/sqlserver/2004/bulkload/format" 
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <RECORD>
+    <FIELD ID="1" xsi:type="CharTerm" TERMINATOR="," MAX_LENGTH="100"/>
+    <FIELD ID="2" xsi:type="CharTerm" TERMINATOR="," MAX_LENGTH="13"/>
+    <FIELD ID="3" xsi:type="CharTerm" TERMINATOR="," MAX_LENGTH="8"/>
+    <FIELD ID="4" xsi:type="CharTerm" TERMINATOR="," MAX_LENGTH="19"/>
+    <FIELD ID="5" xsi:type="CharTerm" TERMINATOR="," MAX_LENGTH="10"/>
+    <FIELD ID="6" xsi:type="CharTerm" TERMINATOR="," MAX_LENGTH="5"/>
+    <FIELD ID="7" xsi:type="CharTerm" TERMINATOR="\r\n" MAX_LENGTH="5"/>
+  </RECORD>
+  <ROW>
+    <COLUMN SOURCE="1" NAME="NomeLivro" xsi:type="SQLVARYCHAR"/>
+    <COLUMN SOURCE="2" NAME="ISBN13" xsi:type="SQLVARYCHAR"/>
+    <COLUMN SOURCE="3" NAME="DataPub" xsi:type="SQLDATE"/>
+    <COLUMN SOURCE="4" NAME="PrecoLivro" xsi:type="SQLMONEY"/>
+    <COLUMN SOURCE="5" NAME="NumeroPaginas" xsi:type="SQLSMALLINT"/>
+    <COLUMN SOURCE="6" NAME="IdEditora" xsi:type="SQLSMALLINT"/>
+    <COLUMN SOURCE="7" NAME="IdAssunto" xsi:type="SQLTINYINT"/>
+  </ROW>
+</BCPFORMAT>
